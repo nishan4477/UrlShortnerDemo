@@ -10,7 +10,7 @@
         align-items: start;
         .banner__content__wrapper{
             .title__main{
-                font-size:clamp(64px,5vw,32px) ;
+                font-size:clamp(42px,5vw,64px) ;
                 font-weight: 700;
                 margin-bottom: 0    ;
                 color: $primary
@@ -19,7 +19,7 @@
     
             }
             .description__main{
-                font-size: clamp(24px,2vw,16px);
+                font-size: clamp(16px,2vw,24px);
                 font-weight: 400;
                 color: $grey;
 
