@@ -1,0 +1,70 @@
+@import "../../styles/variable.scss";
+@import "../../styles/mixin.scss";
+
+.hero__banner__container{
+    padding-block: 80px ;
+    min-height: 90vh;
+
+    .hero__banner__wrapper{
+        @include d-flex-space;
+        align-items: start;
+        .banner__content__wrapper{
+            .title__main{
+                font-size:clamp(64px,5vw,32px) ;
+                font-weight: 700;
+                margin-bottom: 0    ;
+                color: $primary
+
+                
+    
+            }
+            .description__main{
+                font-size: clamp(24px,2vw,16px);
+                font-weight: 400;
+                color: $grey;
+
+            }
+            .btn__main{
+                @include btn-cir(20px,10px,14px)
+
+            }
+
+    
+            
+        }
+    
+
+    }
+
+    .banner__image__wrapper{
+        width: 47%;
+        height: 100%;
+        // overflow-x: visible;
+        img{
+            object-fit: cover;
+            // aspect-ratio: 1/1;
+            
+        }
+    }
+
+
+@media (max-width:768px){
+    .hero__banner__wrapper{
+        flex-direction: column-reverse;
+
+        .banner__image__wrapper{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+
+        .banner__content__wrapper{
+
+
+
+        }
+    }
+}
+    
+}

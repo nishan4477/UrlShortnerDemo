@@ -1,0 +1,148 @@
+@import "../../styles/variable.scss";
+@import "../../styles/mixin.scss";
+header{
+
+
+.header__container {
+    padding-block: 20px;
+
+
+
+    .header__menu {
+        @include d-flex(20px);
+        align-items: center;
+
+        .logo__wrapper {
+            flex-basis: 10%;
+            width: 100px;
+            height: auto;
+
+            img {
+                object-fit: cover;
+
+            }
+        }
+
+        nav {
+            flex-basis: 90%;
+            @include d-flex-space;
+            gap: 20px;
+            .header__btn {
+                @include d-flex(10px);
+                align-items: center;
+        
+                &--login {
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: $grey;
+                    transition: all 0.5s ease;
+        
+                    &:hover {
+                        color: $primary;
+                    }
+                }
+        
+                &--signup {
+                    @include btn-cir(10px, 5px, 14px)
+                }
+            }
+            ul {
+                @include d-flex(20px);
+
+                li {
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: $grey;
+                    transition: all 0.5s ease;
+
+                    &:hover {
+                        color: $primary;
+                    }
+                }
+            }
+
+
+        }
+
+
+
+
+
+
+
+
+
+    }
+
+    .mob-menu{
+        display: none
+        
+    }
+
+   
+
+
+    @media (max-width:768px) {
+        @include d-flex-space;
+       position: relative;
+
+            .header__menu {
+                nav {
+                    display: none;
+                }
+                nav.active{
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                    top: 100%;
+                    background-color: white;
+                    width: 90vw;
+                    height: 50vh;
+
+                    .header__btn{
+                        
+                        flex-direction: column;
+                        gap: 20px;
+
+                        p{
+                            margin-block: 0;
+                        }
+                    }
+
+
+                
+                    
+                    ul{
+                        flex-direction: column;
+                        gap:20px;
+                        align-items: center;
+                        padding-left: 0;
+                    }
+                }
+
+                
+
+                
+
+                
+
+              
+
+            }
+
+            .header__btn {
+                display: none;
+            }
+
+            .mob-menu{
+                display: block;
+                cursor: pointer;
+            }
+
+
+        }
+
+    }
+
+}
+

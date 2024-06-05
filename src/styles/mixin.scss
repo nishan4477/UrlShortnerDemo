@@ -1,0 +1,62 @@
+@import "./variable.scss";
+
+@mixin d-flex-space {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+@mixin d-flex($gap:5px) {
+    display: flex;
+    gap: $gap;
+}
+
+
+@mixin btn-cir($inline, $block, $font-size) {
+    display: inline-block;
+    text-align: center;
+    border-radius: 20px;
+    background-color: $secondary;
+    padding-inline: $inline;
+    padding-block: $block;
+    font-size: $font-size;
+    font-weight: 500;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    transition: all 0.5s ease;
+
+    cursor: pointer;
+    background-color: $secondary;
+
+    &:hover {
+        background-color: $secondary-hover;
+    }
+
+
+}
+
+
+
+@mixin btn-rec($inline, $block, $font-size) {
+    text-align: center;
+    border-radius: 5px;
+    display: inline-block;
+    background-color: $secondary;
+    padding-inline: $inline;
+    padding-block: $block;
+    font-size: $font-size;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: all 0.5s ease;
+    font-weight: 500;
+    color: #FFFFFF;
+    background-color: $secondary;
+
+    &:hover {
+        background-color: $secondary-hover;
+    }
+
+
+}
+

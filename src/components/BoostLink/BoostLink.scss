@@ -1,0 +1,23 @@
+@import "../../styles/variable.scss";
+@import "../../styles/mixin.scss";
+.boost-link{
+    width: 100%;
+    // height: 30vh;
+    background-image: url("../../assets/images/bg-boost-desktop.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: $primary;
+
+    &__container{
+        padding-block: 30px;
+        text-align: center;
+
+        .get-started__btn{
+            @include btn-cir(20px,10px,16px);
+            margin-inline: auto;
+
+        }
+
+    }
+    
+}

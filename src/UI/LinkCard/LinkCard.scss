@@ -1,0 +1,80 @@
+@import "../../styles/mixin.scss";
+@import "../../styles/variable.scss";
+
+.link-card__wrapper {
+    @include d-flex-space;
+    padding: 10px 15px;
+    background: white;
+    margin-bottom: 10px;
+
+    .link {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .main-link {
+
+        color: $primary;
+
+
+
+    }
+
+    .secondary-link {
+        color: $secondary;
+    }
+
+
+    .short-link-btn__wrapper {
+        @include d-flex(10px);
+        align-items: center;
+
+    }
+
+    .btn--copy{
+        @include btn-rec(10px,5px,14px);
+
+    }
+    .btn--copied{
+        @include btn-rec(10px,5px,14px);
+        background-color: $primary;
+        &:hover{
+            background-color: $primary;
+        }
+
+    
+    }
+
+
+
+    @media (max-width:768px){
+        flex-direction: column;
+        justify-content: start;
+      
+
+        .main-link {
+            border-bottom: 1px solid rgb(193, 193, 193);
+            width: 100%;
+            padding-bottom: 10px;
+        }
+        .secondary-link{
+            width: 100%;
+        }
+
+
+        .short-link-btn__wrapper {
+            flex-direction: column;
+            width: 100%;
+        }
+        .btn--copy,.btn--copied{
+            display: block;
+            width: 100%;
+        }
+
+
+    }
+
+
+
+
+}

@@ -1,0 +1,64 @@
+@import "../../styles/variable.scss";
+@import "../../styles/mixin.scss";
+
+.link-shortner__container {
+    background-color: $background-grey;
+    padding-block: 50px;
+
+
+    .link-shortner-field__wrapper {
+        border-radius: 5px;
+        margin-top: -100px  ;
+        margin-bottom: 20px;
+
+        background-image: url("../../assets/images/bg-shorten-desktop.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+        background-color: $primary;
+        padding: 25px 30px;
+        @include d-flex(10px);
+
+
+
+        .input-box__wrapper {
+            flex-basis: 80%;
+
+            input {
+                width: 100%;
+                padding: 15px 20px;
+                font-size: 14px;
+                outline: none;
+
+            }
+
+
+
+
+        }
+
+        .btn__shortner {
+            flex-basis: 20%;
+            @include btn-rec(20px, 15px, 14px)
+        }
+
+
+
+
+
+
+
+
+    }
+
+    @media (max-width: 768px){
+        .link-shortner-field__wrapper {
+        background-image: url("../../assets/images/bg-shorten-mobile.svg");
+
+            flex-direction: column;
+            gap: 20px;
+
+        }
+
+    }
+
+}
