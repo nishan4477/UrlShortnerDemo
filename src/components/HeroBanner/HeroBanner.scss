@@ -49,11 +49,13 @@
 
 
 @media (max-width:768px){
+    min-height: 80vh;
     .hero__banner__wrapper{
         flex-direction: column-reverse;
 
         .banner__image__wrapper{
             width: 100%;
+            
             img{
                 width: 100%;
             }

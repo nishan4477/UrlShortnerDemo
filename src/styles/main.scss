@@ -7,6 +7,7 @@
   box-sizing: border-box;
   inset: 0;
 }
+
 html {
 
   scroll-behavior: smooth;
@@ -19,8 +20,10 @@ body {
   margin: 0;
   overflow-x: hidden !important;
 }
+
 a {
   text-decoration: none !important;
+  
 }
 
 ul {
@@ -28,35 +31,37 @@ ul {
   padding: 0;
 }
 
-.container__main{
-   max-width: 1200px;
-   margin-inline: auto;
-    @media (max-width:576px) {
-        padding-inline: 10px;
+.container__main {
+  max-width: 1200px;
+  margin-inline: auto;
+
+  @media (max-width:576px) {
+    padding-inline: 10px;
 
 
-    }
-    @media (max-width:768px) {
-        padding-inline: 20px;
+  }
+
+  @media (max-width:768px) {
+    padding-inline: 20px;
 
 
-    }
-    
+  }
+
 
 }
 
 
-.heading{
+.heading {
   width: 100%;
   text-align: center;
   font-size: 24px;
   font-weight: 700;
   color: $primary;
-  
+
 }
 
 
-.sub-heading{
+.sub-heading {
   width: 100%;
   text-align: center;
   font-size: 16px;

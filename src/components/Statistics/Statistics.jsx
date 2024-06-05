@@ -4,6 +4,7 @@ import brandRec from "../../assets/images/icon-brand-recognition.svg";
 import detail from "../../assets/images/icon-detailed-records.svg";
 import fullyCustomizable from "../../assets/images/icon-fully-customizable.svg";
 import StatisticsCard from "../../UI/StatisticsCard/StatisticsCard";
+import { TbSection } from "react-icons/tb";
 
 const Statistics = () => {
   const cardDetail = [
@@ -28,7 +29,7 @@ const Statistics = () => {
   ];
 
   return (
-    <div className="statistics__container">
+    <section className="statistics__container">
       <div className="container__main">
         <h2 className="heading">Advanced Statistics</h2>
         <p style={{ marginBottom: "65px" }} className="sub-heading">
@@ -52,7 +53,7 @@ const Statistics = () => {
           })}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -5,9 +5,9 @@ const StatisticsCard = ({logo,title,description}) => {
   return (
     <div className='statistics-card'>
         <div className="statistics-card__container">
-            <div className="statistics-card__logo__wrapper">
+            <figure className="statistics-card__logo__wrapper">
                <img src={logo} alt="card-logo" />
-            </div>
+            </figure>
             <h3 className="statistics-card__title">
                 {title}
             </h3>

@@ -22,7 +22,7 @@ const LinkShortner = () => {
     setLongLink("");
   }
   return (
-    <div className="link-shortner__container">
+    <section className="link-shortner__container">
       <div className="container__main">
         <div className="link-shortner-field__wrapper">
           <div className="input-box__wrapper">
@@ -50,7 +50,7 @@ const LinkShortner = () => {
             );
           })}
       </div>
-    </div>
+    </section>
   );
 };
 

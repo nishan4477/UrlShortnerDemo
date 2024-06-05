@@ -1,9 +1,10 @@
 @import "../../styles/variable.scss";
 @import "../../styles/mixin.scss";
-header{
+
+.header {
 
 
-.header__container {
+
     padding-block: 20px;
 
 
@@ -23,41 +24,48 @@ header{
             }
         }
 
-        nav {
+        .navbar {
             flex-basis: 90%;
             @include d-flex-space;
             gap: 20px;
+
             .header__btn {
                 @include d-flex(10px);
                 align-items: center;
-        
+
                 &--login {
                     font-size: 14px;
                     font-weight: 500;
                     color: $grey;
                     transition: all 0.5s ease;
-        
+
                     &:hover {
                         color: $primary;
                     }
                 }
-        
+
                 &--signup {
                     @include btn-cir(10px, 5px, 14px)
                 }
             }
-            ul {
+
+            .nav__menu {
                 @include d-flex(20px);
 
-                li {
+                .nav__menu-item {
                     font-size: 14px;
                     font-weight: 500;
-                    color: $grey;
-                    transition: all 0.5s ease;
 
-                    &:hover {
-                        color: $primary;
+                    a {
+                        transition: all 0.5s ease;
+
+                        color: $grey;
+
+                        &:hover {
+                            color: $primary;
+                        }
                     }
+
                 }
             }
 
@@ -72,77 +80,81 @@ header{
 
 
 
+
+
     }
 
-    .mob-menu{
+    .mob-menu {
         display: none
-        
     }
 
-   
+
 
 
     @media (max-width:768px) {
         @include d-flex-space;
-       position: relative;
+        position: relative;
 
-            .header__menu {
-                nav {
-                    display: none;
-                }
-                nav.active{
-                    display: block;
-                    position: absolute;
-                    left: 0;
-                    top: 100%;
-                    background-color: white;
-                    width: 90vw;
-                    height: 50vh;
-
-                    .header__btn{
-                        
-                        flex-direction: column;
-                        gap: 20px;
-
-                        p{
-                            margin-block: 0;
-                        }
-                    }
-
-
-                
-                    
-                    ul{
-                        flex-direction: column;
-                        gap:20px;
-                        align-items: center;
-                        padding-left: 0;
-                    }
-                }
-
-                
-
-                
-
-                
-
-              
-
+        .header__menu {
+            .logo__wrapper{
+                margin: 0;
             }
-
-            .header__btn {
+            nav.inactive {
                 display: none;
             }
 
-            .mob-menu{
+            nav.active {
                 display: block;
-                cursor: pointer;
+                position: absolute;
+                left: 0;
+                top: 100%;
+                background-color: white;
+                width: 100VW;
+                height: 50vh;
+
+                .header__btn {
+
+                    flex-direction: column;
+                    gap: 20px;
+
+                    p {
+                        margin-block: 0;
+                    }
+                }
+
+
+
+
+                ul {
+                    flex-direction: column;
+                    gap: 20px;
+                    align-items: center;
+                    padding-left: 0;
+                }
             }
+
+
+
+
+
+
+
 
 
         }
 
+        .header__btn {
+            display: none;
+        }
+
+        .mob-menu {
+            display: block;
+            cursor: pointer;
+        }
+
+
     }
 
-}
 
+
+}

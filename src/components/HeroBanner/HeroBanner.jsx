@@ -10,7 +10,7 @@ const HeroBanner = () => {
   };
 
   return (
-    <div className="hero__banner__container">
+    <section className="hero__banner__container">
       <div className="container__main">
         <div className="hero__banner__wrapper">
           <div className="banner__content__wrapper">
@@ -19,13 +19,13 @@ const HeroBanner = () => {
 
             <div className="btn__main">Get Started</div>
           </div>
-          <div className="banner__image__wrapper">
+          <figure className="banner__image__wrapper">
             <img src={bannerImg} alt="" />
-          </div>
+          </figure>
           
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

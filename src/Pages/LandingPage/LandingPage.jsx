@@ -8,14 +8,14 @@ import BoostLink from '../../components/BoostLink/BoostLink'
 
 const LandingPage = () => {
   return (
-    <div>
+    <main>
         <HeroBanner/>
         <LinkShortner/>
         <Statistics />
         <BoostLink />
         
         
-    </div>
+    </main>
 
   )
 }
